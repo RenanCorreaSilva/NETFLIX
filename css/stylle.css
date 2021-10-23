@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:rgb(24, 23, 23);
+    overflow-y: hidden;
+    overflow-x: hidden;   
+}
+header{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,7) 10%, rgba(0,0,0,0));
+    background-color: transparent;
+    width: 100%;
+    height: 68px;
+}
+.logo{
+    width: 120px;
+    margin-left: 45px;
+    margin-top: -8px;
+}
+
+.container{
+    margin-top: 200px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Arial';
+}
+
+
+ul{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil{
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 40px;  
+    font-size: 20px;    
+    font-family: arial;
+    color: gray;
+    font-size: 25px;
+}
+
+img:hover{
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.perfil:hover{
+    color: white;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;   
+    margin-top: 650px;
+}
+
+button{
+    text-align: center;
+    border: 1px solid rgb(162, 167, 167);
+    color: gray;
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    font-family: arial;
+}
+
+
+button:hover{
+    color: white;
+    border:1px solid white;
+}
+
+
+   
