@@ -1,19 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color:rgb(24, 23, 23);
-    overflow-y: hidden;
-    overflow-x: hidden;   
+    background-color:rgb(24, 23, 23); 
 }
+
 header{
     background-image: linear-gradient(to bottom, rgba(0,0,0,7) 10%, rgba(0,0,0,0));
     background-color: transparent;
     width: 100%;
-    height: 68px;
+    padding: 10px;
 }
+
 .logo{
     width: 120px;
     margin-left: 45px;
@@ -21,52 +22,61 @@ header{
 }
 
 .container{
-    margin-top: 200px;
-    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
     width: 100%;
     color: white;
+    padding: 0 2%;
 }
 
-h1{
+.container h1{
     font-size: 60px;
     font-family: 'Arial';
+    width: 80%;
+    display: inline-block;
 }
 
 
-ul{
+.perfis{
     display: flex;
-    width: 85%;
-    margin: 0 auto;
-    list-style-type: none;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .perfil{
-    cursor: pointer;
-    margin-top: 50px;
-    margin-left: 40px;  
-    font-size: 20px;    
-    font-family: arial;
+    width: 11%;
+    margin: 10px;
+}
+
+.perfil h2{
+    font-family: Arial;
     color: gray;
     font-size: 25px;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
-img:hover{
-    box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 5px;
+.imagem img{
+    border: 4px solid rgb(24, 23, 23);
+    width: 100%;
+    border: 10px;
+   
 }
 
-.perfil:hover{
-    color: white;
+
+.imagem img:hover{
+    border: 4px solid white;
 }
+
 
 .botao{
-    display: flex;
-    justify-content: center;   
-    margin-top: 650px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
 }
 
 button{
@@ -87,5 +97,10 @@ button:hover{
     border:1px solid white;
 }
 
+
+
+@media screen and (max-width:768px){
+    
+}
 
    
