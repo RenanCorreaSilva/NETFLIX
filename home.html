@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <title>Netflix</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="header-left">
+                <a href=""><img src="images/logo_netflix.png"></a>
+                <div class="menu-header">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Séries</a></li>
+                        <li><a href="">Adicionados recentemente</a></li>
+                        <li><a href="">Minha Lista</a></li>
+                    </ul>
+                </div><!--menu-header-->
+            </div><!--header-left-->
+
+            <div class="header-right">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div><!--search-->
+                <a href="">INFANTIL</a>
+                <i class="fa-solid fa-gift"></i>
+                <div class="notification">
+                    <div class="circle-notification">
+                        <span>10</span>
+                    </div><!--circle-->
+                    <i class="fa-solid fa-bell"></i>
+                </div><!--notifications-->
+            </div><!--header-left-->
+
+        <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+
+
+    <section class="destaque">
+
+        <video autoplay muted loop id="video-destaque">
+            <source src="images/arrow.mp4" type="video/mp4">
+            Seu navegador não suporte esse tipo de vídeo.
+        </video>
+
+        <div class="overlay"></div>
+        <div class="texto-destaque">
+            <h2>arrow</h2>
+            <h3>Comece a assistir agora</h3>
+            <p>Aqui vai a descricção completa da minha série ou filme.</p>
+            <br />
+            <a href=""><i class="fa-solid fa-play"></i>Assistir</a>
+            <a href=""><i class="fa-solid fa-play"></i>Assistir</a>
+            <a href=""><i class="fa-solid fa-play"></i>Assistir</a>
+        </div><!--texto-destaque-->
+        <div class="clear"></div>
+    </section><!--destaque-->
+
+    <section class="vitrine">
+        <div class="vitrine-flex">
+            
+            <div class="single-banner">
+                <div style="background-image: url('images/arrow.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/suits.jpeg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/banner.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/arrow.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/suits.jpeg');" class="vitrine-wraper"></div>
+            </div>
+            
+            <div class="single-banner">
+                <div style="background-image: url('images/banner.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/arrow.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/suits.jpeg');" class="vitrine-wraper"></div>
+            </div>
+            
+            <div class="single-banner">
+                <div style="background-image: url('images/banner.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/arrow.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+            <div class="single-banner">
+                <div style="background-image: url('images/suits.jpeg');" class="vitrine-wraper"></div>
+            </div>
+            
+            <div class="single-banner">
+                <div style="background-image: url('images/banner.jpg');" class="vitrine-wraper"></div>
+            </div>
+
+        </div><!--vitrine-flex-->
+    </section><!--vitrine-->
+
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+         $('.vitrine-flex').slick({
+	dots: false,
+	arrows:false,
+  infinite: false,
+  centerMode: false,
+  speed:1000,
+  slidesToShow: 6,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover:false,
+        responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+  }]
+	});
+
+        $('.vitrine-wraper').hover(function(){
+            $(this).css('z-index','1000');
+        })
+
+        $('.vitrine-wraper').mouseout(function(){
+            $(this).css('z-index','0');
+        })
+
+    </script>
+</body>
+</html>

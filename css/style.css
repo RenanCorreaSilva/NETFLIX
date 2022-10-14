@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Helvetica";
+}
+
+body{
+    background-color:rgb(24, 23, 23);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding:  0 2%;
+}
+
+.clear{clear:both}
+
+/**HEADER**/
+
+header{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,7) 10%, rgba(0,0,0,0));
+    background-color: transparent;
+    padding: 12px 0;
+}
+
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    max-width: 120px;
+}
+
+.menu-header{
+    position: relative;
+    top: -10px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-header li{
+    display: inline-block;
+    margin-right:15px ;
+}
+
+.header-right{
+    margin-top: 10px;
+    float: right;
+
+}
+
+.search, .notification{
+    display: inline-block;
+}
+
+.notification{
+    position: relative;
+}
+
+.circle-notification{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #e50914;
+    vertical-align: 20px;
+    text-align: center;
+}
+
+.circle-notification span{
+    font-size: 12px;
+    color: white;
+}
+
+.header-right i{
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: white;
+}
+
+/**DESTAQUE**/
+.destaque{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#video-destaque{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    z-index: 2;
+}
+
+.texto-destaque{
+    color: white;
+    z-index: 3;
+    position: relative;
+    margin-left: 4%;
+    margin-top: 200px;
+}
+
+.texto-destaque h2{
+    color: #b10f17;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.texto-destaque h3{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.texto-destaque p{
+    font-size: 25px;
+}
+
+.texto-destaque a{
+    background-color: rgba(37, 35, 35, 0.3);
+    padding: 8px 40px;
+    font-size: 23px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.texto-destaque i{
+    padding: 5px;
+}
+
+.texto-destaque a:hover{
+    color: black;
+    background-color: white;
+}
+
+/***VITRINE***/
+
+
+
+section.vitrine .vitrine-flex{
+    width: 100% ;
+    z-index: 4;
+    position: relative;
+}
+
+.single-banner{
+    width: 100%;
+    padding-top: calc(16.6% / 2);
+    float: left;
+    position: relative;
+    
+}
+
+.vitrine-wraper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+
+.vitrine-wraper:hover{
+    transition: 1s;
+    transform: scale(1.2,1.2);
+}
+
+
+@media screen and (max-width:768px) {
+    .menu-header{
+        display: none;
+    }
+}
